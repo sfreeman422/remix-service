@@ -5,6 +5,8 @@ export const authController: Router = express.Router();
 
 const authService = new AuthService();
 
+// Lots of the code here should probably just live int he UI. Come back to this.
+
 // Used to initiate authorization workflow for spotify.
 authController.get('/login', (_req, res) => {
   console.log(
